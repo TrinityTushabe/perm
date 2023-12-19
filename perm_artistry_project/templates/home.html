@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Perm Artistry - Home{% endblock %}
+
+{% block content %}
+  <h2>Welcome to Perm Artistry!</h2>
+
+  <section>
+    <h3>Featured Products</h3>
+    {% for product in products %}
+      <div class="product">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h4>{{ product.name }}</h4>
+        <p>{{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+      </div>
+    {% endfor %}
+  </section>
+
+  <!-- Add more sections or content as needed -->
+
+{% endblock %}

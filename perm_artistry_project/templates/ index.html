@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perm Artistry</title>
+    <!-- Add your CSS links, meta tags, etc. here -->
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Perm Artistry!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'signup' %}">Signup</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Welcome to Perm Artistry</h2>
+                </div>
+                <p>Discover unique and captivating art pieces for your space.</p>
+            </div>
+        </section>
+
+        <div class="section-separator" id="about">
+            <h2>About</h2>
+        </div>
+        <section id="about" class="about">
+            <div class="about-text">
+                <h2>Welcome to Perm Artistry!</h2>
+                <p>
+                <ul>
+                    <li>Immerse yourself in the boundless passion of Perminter Kemigisha, the visionary behind our
+                        captivating art collection.</li>
+                    <li>Explore a world where inspiration is drawn from the beauty of nature, emotions, and the human
+                        spirit.</li>
+                    <li>Experience fearless creativity that pushes the boundaries of traditional art, resulting in a
+                        diverse
+                        and breathtaking portfolio.</li>
+                    <li>Each artwork is meticulously crafted, reflecting a commitment to craftsmanship and an eye for
+                        intricate detail.</li>
+                    <li>Discover originality at its finest, as Perminter Kemigisha brings a fresh and authentic
+                        perspective
+                        to the art world.</li>
+                    <li>Forge a personal connection with our soulful creations, inviting you to explore the stories and
+                        meanings embedded in each piece.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="artist-image">
+                <div class="artist-details">
+                    <img src="images/About.jpeg" alt="Artist Image">
+                    <h3>Perminter Kemigisha</h3>
+                </div>
+                <div class="contact-icons">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/+256774680637" target="_blank" title="Send a message on WhatsApp">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:info@example.com" title="Send an email">
+                        <i class="far fa-envelope fa-2x"></i>
+                    </a>
+                    <!-- Phone Call -->
+                    <a href="tel:+256774680637" title="Call us">
+                        <i class="fas fa-phone-alt fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div class="section-separator" id="contactSeparator">
+            <h2>Contact Us</h2>
+        </div>
+        <section id="contact" class="contact">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Perm Artistry. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript links, scripts, etc. here -->
+
+</body>
+
+</html>

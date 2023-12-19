@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Perm Artistry{% endblock %}</title>
+    <!-- Add your CSS links, meta tags, etc. here -->
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="{% url 'home' %}">Perm Artistry</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'product_list' %}">Products</a></li>
+                <li><a href="{% url 'cart' %}">Cart</a></li>
+                <li><a href="{% url 'checkout' %}">Checkout</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Perm Artistry. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript links, scripts, etc. here -->
+
+</body>
+
+</html>
